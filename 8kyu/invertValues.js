@@ -1,0 +1,39 @@
+// 😁 DESCRIPTION
+// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives
+
+// 🐱‍👤TESTS
+// assert.deepEqual(norm(invert([1,2,3,4,5])), [-1,-2,-3,-4,-5]);
+// // assert.deepEqual(norm(invert([1,-2,3,-4,5])), [-1,2,-3,4,-5]);
+// assert.deepEqual(norm(invert([])), []);
+// assert.deepEqual(norm(invert([0])), [0]);
+
+// 👨‍💻SOLUTION
+function invert(array) {
+    // const invertArray = []
+    // for (let index = 0; index < array.length; index++) {
+    //     const element = array[index];
+    //     if (element === 0) {
+    //         invertArray.push(0)
+    //     } else{
+    //         const invertEl = -element 
+    //         invertArray.push(invertEl)
+    //     }
+    // }
+    // return invertArray
+
+    return invertArray = array.map( (el)=> {
+        return el === 0 ? 0 : -el
+        // if (el === 0) {
+        //     return 0
+        // } else{
+        //     const invertEl = -el 
+        //     return invertEl
+        // }
+    } )
+    
+}
+
+console.log(invert([1,-2,3,-4,5,0]));
+// console.log(invert([1,2,3,4,5]));
+// console.log(invert([]));
+// console.log(invert([0]));
